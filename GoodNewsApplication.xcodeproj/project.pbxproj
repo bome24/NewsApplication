@@ -1,0 +1,434 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		24DDBFD229B7CA2C00ABA384 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24DDBFD129B7CA2C00ABA384 /* AppDelegate.swift */; };
+		24DDBFD429B7CA2C00ABA384 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24DDBFD329B7CA2C00ABA384 /* SceneDelegate.swift */; };
+		24DDBFD629B7CA2C00ABA384 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24DDBFD529B7CA2C00ABA384 /* ViewController.swift */; };
+		24DDBFD929B7CA2C00ABA384 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 24DDBFD729B7CA2C00ABA384 /* Main.storyboard */; };
+		24DDBFDB29B7CA2E00ABA384 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 24DDBFDA29B7CA2E00ABA384 /* Assets.xcassets */; };
+		24DDBFDE29B7CA2E00ABA384 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 24DDBFDC29B7CA2E00ABA384 /* LaunchScreen.storyboard */; };
+		955075D4187B00DB07F1DC54 /* Pods_GoodNewsApplication.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BF9D8FFC312412F860B91CB0 /* Pods_GoodNewsApplication.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		24DDBFCE29B7CA2C00ABA384 /* GoodNewsApplication.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GoodNewsApplication.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		24DDBFD129B7CA2C00ABA384 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		24DDBFD329B7CA2C00ABA384 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		24DDBFD529B7CA2C00ABA384 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		24DDBFD829B7CA2C00ABA384 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		24DDBFDA29B7CA2E00ABA384 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		24DDBFDD29B7CA2E00ABA384 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		24DDBFDF29B7CA2E00ABA384 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		9E76D826562D8CE41D45BE5F /* Pods-GoodNewsApplication.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GoodNewsApplication.release.xcconfig"; path = "Target Support Files/Pods-GoodNewsApplication/Pods-GoodNewsApplication.release.xcconfig"; sourceTree = "<group>"; };
+		BF9D8FFC312412F860B91CB0 /* Pods_GoodNewsApplication.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_GoodNewsApplication.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		EFEC3AD106D3D1C55B7F61E1 /* Pods-GoodNewsApplication.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GoodNewsApplication.debug.xcconfig"; path = "Target Support Files/Pods-GoodNewsApplication/Pods-GoodNewsApplication.debug.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		24DDBFCB29B7CA2C00ABA384 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				955075D4187B00DB07F1DC54 /* Pods_GoodNewsApplication.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		24DDBFC529B7CA2C00ABA384 = {
+			isa = PBXGroup;
+			children = (
+				24DDBFD029B7CA2C00ABA384 /* GoodNewsApplication */,
+				24DDBFCF29B7CA2C00ABA384 /* Products */,
+				E96A5185B50BC206D8BD421E /* Pods */,
+				F78E3D7BE3674001C2D123F6 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		24DDBFCF29B7CA2C00ABA384 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				24DDBFCE29B7CA2C00ABA384 /* GoodNewsApplication.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		24DDBFD029B7CA2C00ABA384 /* GoodNewsApplication */ = {
+			isa = PBXGroup;
+			children = (
+				24DDBFD129B7CA2C00ABA384 /* AppDelegate.swift */,
+				24DDBFD329B7CA2C00ABA384 /* SceneDelegate.swift */,
+				24DDBFD529B7CA2C00ABA384 /* ViewController.swift */,
+				24DDBFD729B7CA2C00ABA384 /* Main.storyboard */,
+				24DDBFDA29B7CA2E00ABA384 /* Assets.xcassets */,
+				24DDBFDC29B7CA2E00ABA384 /* LaunchScreen.storyboard */,
+				24DDBFDF29B7CA2E00ABA384 /* Info.plist */,
+			);
+			path = GoodNewsApplication;
+			sourceTree = "<group>";
+		};
+		E96A5185B50BC206D8BD421E /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				EFEC3AD106D3D1C55B7F61E1 /* Pods-GoodNewsApplication.debug.xcconfig */,
+				9E76D826562D8CE41D45BE5F /* Pods-GoodNewsApplication.release.xcconfig */,
+			);
+			name = Pods;
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		F78E3D7BE3674001C2D123F6 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				BF9D8FFC312412F860B91CB0 /* Pods_GoodNewsApplication.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		24DDBFCD29B7CA2C00ABA384 /* GoodNewsApplication */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 24DDBFE229B7CA2E00ABA384 /* Build configuration list for PBXNativeTarget "GoodNewsApplication" */;
+			buildPhases = (
+				EB0F94B4678E220E9B4E7647 /* [CP] Check Pods Manifest.lock */,
+				24DDBFCA29B7CA2C00ABA384 /* Sources */,
+				24DDBFCB29B7CA2C00ABA384 /* Frameworks */,
+				24DDBFCC29B7CA2C00ABA384 /* Resources */,
+				6B3403839183D27499B3F064 /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = GoodNewsApplication;
+			productName = GoodNewsApplication;
+			productReference = 24DDBFCE29B7CA2C00ABA384 /* GoodNewsApplication.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		24DDBFC629B7CA2C00ABA384 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1420;
+				LastUpgradeCheck = 1420;
+				TargetAttributes = {
+					24DDBFCD29B7CA2C00ABA384 = {
+						CreatedOnToolsVersion = 14.2;
+					};
+				};
+			};
+			buildConfigurationList = 24DDBFC929B7CA2C00ABA384 /* Build configuration list for PBXProject "GoodNewsApplication" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 24DDBFC529B7CA2C00ABA384;
+			productRefGroup = 24DDBFCF29B7CA2C00ABA384 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				24DDBFCD29B7CA2C00ABA384 /* GoodNewsApplication */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		24DDBFCC29B7CA2C00ABA384 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				24DDBFDE29B7CA2E00ABA384 /* LaunchScreen.storyboard in Resources */,
+				24DDBFDB29B7CA2E00ABA384 /* Assets.xcassets in Resources */,
+				24DDBFD929B7CA2C00ABA384 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		6B3403839183D27499B3F064 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-GoodNewsApplication/Pods-GoodNewsApplication-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-GoodNewsApplication/Pods-GoodNewsApplication-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-GoodNewsApplication/Pods-GoodNewsApplication-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		EB0F94B4678E220E9B4E7647 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-GoodNewsApplication-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		24DDBFCA29B7CA2C00ABA384 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				24DDBFD629B7CA2C00ABA384 /* ViewController.swift in Sources */,
+				24DDBFD229B7CA2C00ABA384 /* AppDelegate.swift in Sources */,
+				24DDBFD429B7CA2C00ABA384 /* SceneDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		24DDBFD729B7CA2C00ABA384 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				24DDBFD829B7CA2C00ABA384 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		24DDBFDC29B7CA2E00ABA384 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				24DDBFDD29B7CA2E00ABA384 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		24DDBFE029B7CA2E00ABA384 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.2;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		24DDBFE129B7CA2E00ABA384 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		24DDBFE329B7CA2E00ABA384 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = EFEC3AD106D3D1C55B7F61E1 /* Pods-GoodNewsApplication.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = UKZF3A6P2B;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = GoodNewsApplication/Info.plist;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = BoMin.GoodNewsApplication;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		24DDBFE429B7CA2E00ABA384 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 9E76D826562D8CE41D45BE5F /* Pods-GoodNewsApplication.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = UKZF3A6P2B;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = GoodNewsApplication/Info.plist;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = BoMin.GoodNewsApplication;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		24DDBFC929B7CA2C00ABA384 /* Build configuration list for PBXProject "GoodNewsApplication" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				24DDBFE029B7CA2E00ABA384 /* Debug */,
+				24DDBFE129B7CA2E00ABA384 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		24DDBFE229B7CA2E00ABA384 /* Build configuration list for PBXNativeTarget "GoodNewsApplication" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				24DDBFE329B7CA2E00ABA384 /* Debug */,
+				24DDBFE429B7CA2E00ABA384 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 24DDBFC629B7CA2C00ABA384 /* Project object */;
+}
