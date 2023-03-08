@@ -14,3 +14,9 @@ class ArticleCell: UITableViewCell {
     @IBOutlet weak var descripLabel: UILabel!
     
 }
+
+class ArticleKorCell: UITableViewCell {
+    
+    @IBOutlet weak var titleLabel: UILabel!
+    
+}

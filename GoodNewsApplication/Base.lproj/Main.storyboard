@@ -53,13 +53,53 @@
                                     <outlet property="titleLabel" destination="3NU-bp-SAx" id="hhV-ra-ODq"/>
                                 </connections>
                             </tableViewCell>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="ArticleKorTableViewCell" rowHeight="80" id="sqg-Nc-8wC" customClass="ArticleKorCell" customModule="GoodNewsApplication" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="130" width="393" height="80"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="sqg-Nc-8wC" id="Ma6-eD-GqG">
+                                    <rect key="frame" x="0.0" y="0.0" width="393" height="80"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                    <subviews>
+                                        <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="ofe-Dn-WfL">
+                                            <rect key="frame" x="20" y="11" width="353" height="58"/>
+                                            <subviews>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="IVy-Cc-EkY">
+                                                    <rect key="frame" x="0.0" y="0.0" width="353" height="58"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                        </stackView>
+                                    </subviews>
+                                    <constraints>
+                                        <constraint firstItem="ofe-Dn-WfL" firstAttribute="leading" secondItem="Ma6-eD-GqG" secondAttribute="leadingMargin" id="7ml-gr-OEb"/>
+                                        <constraint firstAttribute="trailingMargin" secondItem="ofe-Dn-WfL" secondAttribute="trailing" id="A30-IY-eCa"/>
+                                        <constraint firstAttribute="bottomMargin" secondItem="ofe-Dn-WfL" secondAttribute="bottom" id="iLu-RP-tvy"/>
+                                        <constraint firstItem="ofe-Dn-WfL" firstAttribute="top" secondItem="Ma6-eD-GqG" secondAttribute="topMargin" id="kk6-Jl-gVn"/>
+                                    </constraints>
+                                </tableViewCellContentView>
+                                <connections>
+                                    <outlet property="titleLabel" destination="IVy-Cc-EkY" id="bwu-tK-XEW"/>
+                                </connections>
+                            </tableViewCell>
                         </prototypes>
                         <connections>
                             <outlet property="dataSource" destination="nJQ-7a-WHZ" id="6gH-uN-YTq"/>
                             <outlet property="delegate" destination="nJQ-7a-WHZ" id="GAV-qh-DCK"/>
                         </connections>
                     </tableView>
-                    <navigationItem key="navigationItem" title="GoodNews" id="iDk-G2-e5W"/>
+                    <navigationItem key="navigationItem" title="GoodNews" id="iDk-G2-e5W">
+                        <barButtonItem key="rightBarButtonItem" title="KOR" id="yQ0-LS-uFr">
+                            <color key="tintColor" systemColor="systemGray4Color"/>
+                            <connections>
+                                <action selector="langButtonPress" destination="nJQ-7a-WHZ" id="LUV-83-zd1"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                    <connections>
+                        <outlet property="languageButton" destination="yQ0-LS-uFr" id="rCZ-AF-fnM"/>
+                    </connections>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="fUc-jW-ozA" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
@@ -87,6 +127,9 @@
     <resources>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemGray4Color">
+            <color red="0.81960784313725488" green="0.81960784313725488" blue="0.83921568627450982" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
         <systemColor name="systemGrayColor">
             <color red="0.55686274509803924" green="0.55686274509803924" blue="0.57647058823529407" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>

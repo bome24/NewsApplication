@@ -11,9 +11,12 @@ import RxCocoa
 
 class NewsTableViewController: UITableViewController {
     
+    @IBOutlet weak var languageButton: UIBarButtonItem!
+    
     let disposeBag = DisposeBag()
     
     private var articles = [Article]()
+    private var curLang = "ENG"
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -32,36 +35,65 @@ class NewsTableViewController: UITableViewController {
     
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         
-        guard let cell = tableView.dequeueReusableCell(withIdentifier: "ArticleTableViewCell", for: indexPath) as? ArticleCell else {
-            fatalError("ArticleCell not found")
+        if (self.curLang == "ENG") {
+            guard let cell = tableView.dequeueReusableCell(withIdentifier: "ArticleTableViewCell", for: indexPath) as? ArticleCell else {
+                fatalError("ArticleCell not found")
+            }
+            
+            cell.titleLabel.text = self.articles[indexPath.row].title
+            cell.descripLabel.text = self.articles[indexPath.row].description
+            
+            return cell
+        } else {
+            guard let cell = tableView.dequeueReusableCell(withIdentifier: "ArticleKorTableViewCell", for: indexPath) as? ArticleKorCell else {
+                fatalError("ArticleKorCell not found")
+            }
+            
+            cell.titleLabel.text = self.articles[indexPath.row].title
+            
+            return cell
         }
         
-        cell.titleLabel.text = self.articles[indexPath.row].title
-        cell.descripLabel.text = self.articles[indexPath.row].description
-        
-        return cell
-        
+    }
+    
+    @IBAction func langButtonPress() {
+        if (self.curLang == "ENG") {
+            self.curLang = "KOR"
+            self.languageButton.title = "ENG"
+            self.title = "굿뉴스"
+            fetchKorNews()
+        } else {
+            self.curLang = "ENG"
+            self.languageButton.title = "KOR"
+            self.title = "GoodNews"
+            fetchEngNews()
+        }
     }
     
     private func fetchEngNews() {
         
-        let engURL = URL(string: "https://newsapi.org/v2/top-headlines?country=us&apiKey=b85fd2ea4fda4570a2cd9e191a05f021")!
-        
-        Observable.just(engURL)
-            .flatMap{ url -> Observable<Data> in
-                let request = URLRequest(url: engURL)
-                return URLSession.shared.rx.data(request: request)
-            }.map { data -> [Article]? in
-                return try? JSONDecoder().decode(ArticlesList.self, from: data).articles
-            }.subscribe(onNext: { [weak self] articles in
-                
-                if let articles = articles {
-                    self?.articles = articles
+        URLRequest.load(resource: ArticlesList.eng)
+            .subscribe(onNext: { [weak self] res in
+                if let res = res {
+                    self?.articles = res.articles
                     DispatchQueue.main.async {
                         self?.tableView.reloadData()
                     }
                 }
-                
+            }).disposed(by: disposeBag)
+        
+    }
+    
+    private func fetchKorNews() {
+        
+        URLRequest.load(resource: ArticlesList.kor)
+            .subscribe(onNext: { [weak self] res in
+                if let res = res {
+                    self?.articles = res.articles
+                    DispatchQueue.main.async {
+                        self?.tableView.reloadData()
+                    }
+                }
             }).disposed(by: disposeBag)
         
     }
