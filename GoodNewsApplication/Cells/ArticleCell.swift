@@ -6,3 +6,11 @@
 //
 
 import Foundation
+import UIKit
+
+class ArticleCell: UITableViewCell {
+    
+    @IBOutlet weak var titleLabel: UILabel!
+    @IBOutlet weak var descripLabel: UILabel!
+    
+}
